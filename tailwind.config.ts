@@ -61,11 +61,21 @@ export default {
           "75%": { backgroundPosition: "50% 0%" },
           "100%": { backgroundPosition: "0% 50%" },
         },
+        "float-left": {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        "float-right": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "gradient": "gradient 30s ease infinite",
+        "gradient": "gradient 15s linear infinite", 
+        "float-left": "float-left 20s linear infinite",
+        "float-right": "float-right 20s linear infinite",
       },
     },
   },
